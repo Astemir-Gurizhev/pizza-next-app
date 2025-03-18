@@ -27,3 +27,7 @@ html {
 .scrollbar::-webkit-scrollbar-thumb:hover {
 	background: #dbdadd;
 }
+
+button {
+	cursor: pointer;
+}
