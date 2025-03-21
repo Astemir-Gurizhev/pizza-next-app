@@ -1,4 +1,5 @@
 import { Container, Filters, Title, TopBar } from '@/components/shared'
+import { ProductCard } from '@/components/shared/product-card'
 
 export default function Home() {
 	return (
@@ -19,7 +20,7 @@ export default function Home() {
 						<div className='flex flex-col gap-16'>
 							{/* <ProductsGroupList title='Пиццы' items={[1,2,3,4,5]} />
 							<ProductsGroupList title='Пиццы' items={[1,2,3,4,5]} /> */}
-							Список товаров
+							
 						</div>
 					</div>
 				</div>
