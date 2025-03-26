@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from '../ui'
 import { Container } from './container'
+import { SearchInput } from './search-input'
+
 
 interface Props {
 	className?: string
@@ -13,7 +15,7 @@ export const Header: React.FC<Props> = ({ className }) => {
 	return (
 		<header>
 			<Container className='flex items-center justify-between py-8'>
-				{/* левая часть */}
+
 				<Link href='/'>
 					<div className='flex items-center gap-4'>
 						<Image src='/logo.png' width={35} height={35} alt='Logo' />
@@ -26,7 +28,8 @@ export const Header: React.FC<Props> = ({ className }) => {
 					</div>
 				</Link>
 
-				{/* {правая часть} */}
+				<SearchInput/>
+
 				<div className='flex items-center gap-3'>
 					<Button variant='outline' className='flex items-center gap-1'>
 						<User size={16} />
